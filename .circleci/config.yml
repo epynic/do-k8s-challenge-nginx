@@ -41,7 +41,7 @@ jobs:
             cp /tmp/workspace/nginx-deployment.output cdn-on-kubernetes/k8s/cdn/nginx-deployment.yaml
             cd cdn-on-kubernetes 
             git remote set-url origin https://${GITHUBHUB_PASS}@github.com/epynic/cdn-on-kubernetes.git
-            git commit --allow-empty -am "Automatic commit from CircleCI:$CIRCLE_BUILD_NUM"
+            git commit --allow-empty -am "Automatic commit CircleCI-nginx:$CIRCLE_BUILD_NUM"
             git push origin main
 workflows:
   version: 2
