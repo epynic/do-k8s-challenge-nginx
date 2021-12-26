@@ -1,0 +1,9 @@
+version: "3.9"
+services: 
+    nginx:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: epynic/do-k8s-challenge-nginx
+        ports:
+        - "80:80"
